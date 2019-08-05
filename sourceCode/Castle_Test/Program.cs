@@ -21,7 +21,7 @@ namespace Castle_Test
             {
                 var c = invocation.Method.ReturnType.IsAssignableFrom(typeof(System.Collections.ICollection));
                 Console.WriteLine(c);
-                Console.WriteLine("得到的是Get");
+                Console.WriteLine("得到的是Get");  
             }
         }
     } 
