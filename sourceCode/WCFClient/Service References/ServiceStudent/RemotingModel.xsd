@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/RemotingModel" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/RemotingModel" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://nsun-shadow.com" />
+  <xs:complexType name="ArrayOfStudentRemotingModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StudentRemotingModel" nillable="true" type="tns:StudentRemotingModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStudentRemotingModel" nillable="true" type="tns:ArrayOfStudentRemotingModel" />
+  <xs:complexType name="StudentRemotingModel">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://nsun-shadow.com" base="q1:BaseEntityRefObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Age" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Birthday" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Classid" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Pass" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Stamp" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="StudentInfo" nillable="true" type="tns:StudentInfoRemotingModel" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StudentRemotingModel" nillable="true" type="tns:StudentRemotingModel" />
+  <xs:complexType name="StudentInfoRemotingModel">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://nsun-shadow.com" base="q2:BaseEntity">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StudentInfoRemotingModel" nillable="true" type="tns:StudentInfoRemotingModel" />
+</xs:schema>

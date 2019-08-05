@@ -1,0 +1,6 @@
+E:\work\MyProject\NSun_Shadow2.0\NSun_Test\bin\Debug\NSun_Test.exe
+E:\work\MyProject\NSun_Shadow2.0\NSun_Test\bin\Debug\NSun_Test.pdb
+E:\work\MyProject\NSun_Shadow2.0\NSun_Test\bin\Debug\Castle.Core.dll
+E:\work\MyProject\NSun_Shadow2.0\NSun_Test\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\work\MyProject\NSun_Shadow2.0\NSun_Test\obj\x86\Debug\NSun_Test.exe
+E:\work\MyProject\NSun_Shadow2.0\NSun_Test\obj\x86\Debug\NSun_Test.pdb

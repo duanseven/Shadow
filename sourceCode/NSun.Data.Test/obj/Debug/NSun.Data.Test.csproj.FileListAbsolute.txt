@@ -1,0 +1,12 @@
+E:\shadow\sourceCode\NSun.Data.Test\bin\Debug\NSun.Data.Test.dll.config
+E:\shadow\sourceCode\NSun.Data.Test\bin\Debug\NSun.Data.Test.dll
+E:\shadow\sourceCode\NSun.Data.Test\bin\Debug\NSun.Data.Test.pdb
+E:\shadow\sourceCode\NSun.Data.Test\bin\Debug\Castle.Core.dll
+E:\shadow\sourceCode\NSun.Data.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\shadow\sourceCode\NSun.Data.Test\bin\Debug\NSun.Data.dll
+E:\shadow\sourceCode\NSun.Data.Test\bin\Debug\NSun.Data.pdb
+E:\shadow\sourceCode\NSun.Data.Test\obj\Debug\NSun.Data.Test.dll
+E:\shadow\sourceCode\NSun.Data.Test\obj\Debug\NSun.Data.Test.pdb
+E:\shadow\sourceCode\NSun.Data.Test\obj\Debug\NSun.Data.Test.csprojAssemblyReference.cache
+E:\shadow\sourceCode\NSun.Data.Test\obj\Debug\NSun.Data.Test.csproj.CoreCompileInputs.cache
+E:\shadow\sourceCode\NSun.Data.Test\obj\Debug\NSun.Data.Test.csproj.CopyComplete

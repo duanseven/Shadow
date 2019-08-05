@@ -1,0 +1,66 @@
+﻿<Window x:Class="GeneratorV2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        Title="MainWindow" Height="400" Width="850" WindowStartupLocation="CenterScreen">
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="140*" />
+            <ColumnDefinition Width="140*" />
+            <ColumnDefinition Width="140*" />
+            <ColumnDefinition Width="380*" />
+        </Grid.ColumnDefinitions>
+        <ListBox Grid.Column="0" Name="treetable" ItemsSource="{Binding SqlOutInfo.Tables}"> 
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <CheckBox Content="{Binding Tabname}" IsChecked="{Binding Ischeck}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ListBox Grid.Column="1" Name="treeview"  ItemsSource="{Binding SqlOutInfo.Views}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <CheckBox Content="{Binding Tabname}" IsChecked="{Binding Ischeck}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ListBox Grid.Column="2" Name="treeproc"  ItemsSource="{Binding SqlOutInfo.Sproc}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <CheckBox Content="{Binding Tabname}" IsChecked="{Binding Ischeck}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Grid Grid.Column="3" Name="grid1">
+            <TextBox Height="23" HorizontalAlignment="Left" Text="{Binding ConnInfoView.ConnectionString}" Margin="125,8,0,0" Name="textBox1" VerticalAlignment="Top" Width="262" />
+            <Label Content="ConnectionString:" Height="28" HorizontalAlignment="Left" Margin="11,6,0,0" Name="label1" VerticalAlignment="Top" Width="116" />
+            <Button Command="{Binding ConnectCommand}" Content="Connect" Height="23" HorizontalAlignment="Left" Margin="81,319,0,0" Name="button1" VerticalAlignment="Top" Width="75" />
+            <Label Content="Output Directory:" Height="28" HorizontalAlignment="Left" Margin="14,70,0,0" Name="label2" VerticalAlignment="Top" />
+            <TextBox Text="{Binding FileInfoView.OutPutPath}" Height="23" HorizontalAlignment="Left" Margin="125,72,0,0" Name="textBox2" VerticalAlignment="Top" Width="183" IsReadOnly="True" />
+            <Button Command="{Binding BrowseCommand}" Content="Browse" Height="23" HorizontalAlignment="Left" Margin="317,71,0,0" Name="button2" VerticalAlignment="Top" Width="70" />
+            <Label Content="Output Namespace:" Height="28" HorizontalAlignment="Left" Margin="1,105,0,0" Name="label3" VerticalAlignment="Top" />
+            <TextBox Text="{Binding FileInfoView.FileNameSpace}" Height="23" HorizontalAlignment="Left" Margin="126,107,0,0" Name="textBox3" VerticalAlignment="Top" Width="182" />
+            <Label Content="Server Type:" Height="28" HorizontalAlignment="Left" Margin="41,38,0,0" Name="label4" VerticalAlignment="Top" />
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="126,40,0,0" Name="comboBox1" ItemsSource="{Binding ListSQLType}" VerticalAlignment="Top" Width="182"
+                                             DisplayMemberPath="" SelectedValuePath=""  SelectedValue="{Binding ConnInfoView.SQLType}" SelectedIndex="0" />
+            <Label Content="Output Filesuffix:" Height="28" HorizontalAlignment="Left" Margin="18,137,0,0" Name="label5" VerticalAlignment="Top" />
+            <TextBox Text="{Binding FileInfoView.FileNameSuffix}"  Height="23" HorizontalAlignment="Left" Margin="126,139,0,0" Name="textBox4" VerticalAlignment="Top" Width="183" />
+            <Button Command="{Binding GeneratorCommand}"  Content="Generator" Height="23" HorizontalAlignment="Left" Margin="233,319,0,0" Name="button3" VerticalAlignment="Top" Width="75" />
+            <!--<Button Command="{Binding CheckAllCommand}" Content="Check All" Height="23" HorizontalAlignment="Left" Margin="140,318,0,0" Name="button4" VerticalAlignment="Top" Width="75" />-->
+            <CheckBox  Command="{Binding CheckAllCommand}" Content="IsCheck All" IsChecked="{Binding IsCheckAll}"  Margin="289,205,0,0" FlowDirection="RightToLeft" HorizontalAlignment="Left" Width="82" Height="16" VerticalAlignment="Top" />
+            <GroupBox Header="Search" Height="84" HorizontalAlignment="Left" Margin="48,226,0,0" Name="groupBox1" VerticalAlignment="Top" Width="336">
+                <Grid>
+                    <Label Content="Table:" Height="28" HorizontalAlignment="Left" Margin="23,4,0,0" Name="label6" VerticalAlignment="Top" />
+                    <TextBox Text="{Binding SearchView.TableName}" Height="23" HorizontalAlignment="Left" Margin="69,5,0,0" Name="textBox5" VerticalAlignment="Top" Width="151" />
+                    <Label Content="View:" Height="28" HorizontalAlignment="Left" Margin="27,28,0,0" Name="label7" VerticalAlignment="Top" />
+                    <TextBox Text="{Binding SearchView.ViewName}" Height="23" HorizontalAlignment="Left" Margin="69,32,0,0" Name="textBox6" VerticalAlignment="Top" Width="151" />
+                    <Button Content="Search" Command="{Binding SearchCommand}" Height="38" HorizontalAlignment="Left" Margin="239,12,0,0" Name="button5" VerticalAlignment="Top" Width="73" />
+                </Grid>
+            </GroupBox>
+            <CheckBox Content="IsCastle" IsChecked="{Binding IsMapping}" Height="16" HorizontalAlignment="Left" Margin="41,205,0,0" Name="checkBox1" VerticalAlignment="Top" FlowDirection="RightToLeft" IsEnabled="True" ToolTip="是否使用castle的动态代理" />
+            <CheckBox Content="IsPartial" IsChecked="{Binding IsPartial}" Height="16" HorizontalAlignment="Left" Margin="127,205,0,0" Name="checkBox2" VerticalAlignment="Top" FlowDirection="RightToLeft" ToolTip="使用Partial的方式生成" />
+            <Label Content="AssemblyName:" Height="28" HorizontalAlignment="Left" Margin="22,171,0,0" Name="label8" VerticalAlignment="Top" IsEnabled="True" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="126,173,0,0" Name="textBox7" Text="{Binding AssemblyName}" VerticalAlignment="Top" Width="183" />
+            <CheckBox Content="IsTable" FlowDirection="RightToLeft" Height="16" HorizontalAlignment="Left" IsChecked="{Binding IsTable}" Margin="213,205,0,0" Name="checkBox3" VerticalAlignment="Top" ToolTip="是否生成独立的table类" />
+        </Grid>
+    </Grid>
+</Window>

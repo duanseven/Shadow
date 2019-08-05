@@ -1,0 +1,10 @@
+E:\shadow\sourceCode\RemotingModel\bin\Debug\RemotingModel.dll
+E:\shadow\sourceCode\RemotingModel\bin\Debug\RemotingModel.pdb
+E:\shadow\sourceCode\RemotingModel\bin\Debug\NSun.Data.dll
+E:\shadow\sourceCode\RemotingModel\bin\Debug\Castle.Core.dll
+E:\shadow\sourceCode\RemotingModel\bin\Debug\NSun.Data.pdb
+E:\shadow\sourceCode\RemotingModel\obj\Debug\RemotingModel.dll
+E:\shadow\sourceCode\RemotingModel\obj\Debug\RemotingModel.pdb
+E:\shadow\sourceCode\RemotingModel\obj\Debug\RemotingModel.csprojAssemblyReference.cache
+E:\shadow\sourceCode\RemotingModel\obj\Debug\RemotingModel.csproj.CoreCompileInputs.cache
+E:\shadow\sourceCode\RemotingModel\obj\Debug\RemotingModel.csproj.CopyComplete

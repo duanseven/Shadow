@@ -1,0 +1,133 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="98C4732D-807E-474D-B8F9-C1163CF0A407/d:System/f:AdditionalTypes.cs" caret="16091" fromTop="11" />
+      <File id="98C4732D-807E-474D-B8F9-C1163CF0A407/d:Command/f:QueryCriteria.cs" caret="182" fromTop="4" />
+      <File id="98C4732D-807E-474D-B8F9-C1163CF0A407/d:System/f:CommonUtils.cs" caret="282" fromTop="13" />
+      <File id="CC34FAA9-90DE-45A7-A260-5B3916F4EEFE/f:BookService.cs" caret="363" fromTop="5" />
+      <File id="F54954D6-B948-4D24-A7D7-906264227D22/f:QuerySprocCodeGenerator.cs" caret="7092" fromTop="17" />
+      <File id="AFFB1B13-3873-477E-8D44-E8E30CAAFEC9/f:IStudentService.cs" caret="230" fromTop="9" />
+      <File id="A8E97429-D847-42D3-A6B9-E337E082A6BC/f:Program.cs" caret="242" fromTop="12" />
+      <File id="90F18008-6F89-4461-A05E-27E5EFDDEBD1/f:app.config" caret="0" fromTop="0" />
+      <File id="C0835C7B-8C7A-46D2-B532-D6DD8EC6EA08/d:DomainModel/f:StudentInfoRemotingModel.cs" caret="0" fromTop="0" />
+      <File id="98C4732D-807E-474D-B8F9-C1163CF0A407/d:Lambda/d:SqlSection/f:SelectSqlSectionMapping.cs" caret="0" fromTop="0" />
+      <File id="C0835C7B-8C7A-46D2-B532-D6DD8EC6EA08/d:DomainModel/f:StudentRemotingModel.cs" caret="691" fromTop="17" />
+      <File id="98C4732D-807E-474D-B8F9-C1163CF0A407/d:Condition/f:OrderByClip.cs" caret="978" fromTop="22" />
+      <File id="98C4732D-807E-474D-B8F9-C1163CF0A407/d:Command/d:Section/f:SelectSqlSection.cs" caret="6720" fromTop="147" />
+      <File id="98C4732D-807E-474D-B8F9-C1163CF0A407/d:Configuration/f:KnownTypeRegistry.cs" caret="4470" fromTop="16" />
+      <File id="CF0A6FC9-1277-47CF-BED2-06169A77E453/f:DBFactory.cs" caret="532" fromTop="11" />
+      <File id="98C4732D-807E-474D-B8F9-C1163CF0A407/d:Mapping/d:Data/f:DBQueryMapping.cs" caret="15155" fromTop="10" />
+      <File id="98C4732D-807E-474D-B8F9-C1163CF0A407/d:Data/f:DBQuery.cs" caret="7405" fromTop="7" />
+      <File id="CF0A6FC9-1277-47CF-BED2-06169A77E453/f:StudentService.cs" caret="381" fromTop="8" />
+      <File id="90F18008-6F89-4461-A05E-27E5EFDDEBD1/d:Service References/d:ServiceStudent/f:Reference.cs" caret="19480" fromTop="7" />
+      <File id="A8E97429-D847-42D3-A6B9-E337E082A6BC/f:app.config" caret="252" fromTop="4" />
+      <File id="98C4732D-807E-474D-B8F9-C1163CF0A407/d:Data/f:Database.cs" caret="7037" fromTop="8" />
+      <File id="90F18008-6F89-4461-A05E-27E5EFDDEBD1/f:Program.cs" caret="823" fromTop="20" />
+      <File id="9BD41476-81B4-405D-BFC7-7A74A3EE48F2/f:Program.cs" caret="857" fromTop="20" />
+      <File id="F54954D6-B948-4D24-A7D7-906264227D22/f:QueryTableCodeGenerator.cs" caret="0" fromTop="0" />
+      <File id="98C4732D-807E-474D-B8F9-C1163CF0A407/d:Mapping/f:BaseEntity.cs" caret="319" fromTop="12" />
+      <File id="C0835C7B-8C7A-46D2-B532-D6DD8EC6EA08/d:DomainModel/f:ClassRemotingModel.cs" caret="692" fromTop="21" />
+      <File id="C0835C7B-8C7A-46D2-B532-D6DD8EC6EA08/d:DomainModel/f:AddTeachSproc.cs" caret="0" fromTop="0" />
+      <File id="C0835C7B-8C7A-46D2-B532-D6DD8EC6EA08/d:DomainTable/f:ClassTable.cs" caret="0" fromTop="0" />
+      <File id="94A92534-BFC0-4B09-9E0E-4C2A17E8C75F/f:Program.cs" caret="285" fromTop="12" />
+      <File id="98C4732D-807E-474D-B8F9-C1163CF0A407/d:Mapping/f:AttributeClass.cs" caret="5137" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="9BD41476-81B4-405D-BFC7-7A74A3EE48F2/f:Program.cs" caret="797" fromTop="12" />
+      <File id="AFFB1B13-3873-477E-8D44-E8E30CAAFEC9/f:IStudentService.cs" caret="390" fromTop="13" />
+      <File id="CF0A6FC9-1277-47CF-BED2-06169A77E453/f:StudentService.cs" caret="208" fromTop="7" />
+      <File id="AFFB1B13-3873-477E-8D44-E8E30CAAFEC9/f:IStudentService.cs" caret="281" fromTop="11" />
+      <File id="CF0A6FC9-1277-47CF-BED2-06169A77E453/f:DBFactory.cs" caret="46" fromTop="3" />
+      <File id="CF0A6FC9-1277-47CF-BED2-06169A77E453/f:StudentService.cs" caret="581" fromTop="19" />
+      <File id="CF0A6FC9-1277-47CF-BED2-06169A77E453/f:StudentService.cs" caret="626" fromTop="25" />
+      <File id="A8E97429-D847-42D3-A6B9-E337E082A6BC/f:app.config" caret="1024" fromTop="23" />
+      <File id="A8E97429-D847-42D3-A6B9-E337E082A6BC/f:app.config" caret="336" fromTop="8" />
+      <File id="A8E97429-D847-42D3-A6B9-E337E082A6BC/f:app.config" caret="1278" fromTop="31" />
+      <File id="A8E97429-D847-42D3-A6B9-E337E082A6BC/f:app.config" caret="2481" fromTop="15" />
+      <File id="98C4732D-807E-474D-B8F9-C1163CF0A407/d:Mapping/f:BaseEntity.cs" caret="4188" fromTop="2" />
+      <File id="C0835C7B-8C7A-46D2-B532-D6DD8EC6EA08/d:DomainModel/f:StudentRemotingModel.cs" caret="803" fromTop="22" />
+      <File id="C0835C7B-8C7A-46D2-B532-D6DD8EC6EA08/d:DomainModel/f:StudentRemotingModel.cs" caret="1042" fromTop="21" />
+      <File id="C0835C7B-8C7A-46D2-B532-D6DD8EC6EA08/d:DomainModel/f:StudentRemotingModel.cs" caret="1391" fromTop="25" />
+      <File id="C0835C7B-8C7A-46D2-B532-D6DD8EC6EA08/d:DomainModel/f:StudentRemotingModel.cs" caret="1719" fromTop="26" />
+      <File id="C0835C7B-8C7A-46D2-B532-D6DD8EC6EA08/d:DomainModel/f:StudentRemotingModel.cs" caret="2068" fromTop="21" />
+      <File id="C0835C7B-8C7A-46D2-B532-D6DD8EC6EA08/d:DomainModel/f:StudentRemotingModel.cs" caret="2394" fromTop="22" />
+      <File id="C0835C7B-8C7A-46D2-B532-D6DD8EC6EA08/d:DomainModel/f:StudentRemotingModel.cs" caret="2716" fromTop="25" />
+      <File id="90F18008-6F89-4461-A05E-27E5EFDDEBD1/f:Program.cs" caret="887" fromTop="17" />
+      <File id="90F18008-6F89-4461-A05E-27E5EFDDEBD1/f:Program.cs" caret="652" fromTop="16" />
+      <File id="90F18008-6F89-4461-A05E-27E5EFDDEBD1/f:Program.cs" caret="912" fromTop="26" />
+      <File id="98C4732D-807E-474D-B8F9-C1163CF0A407/d:Mapping/f:BaseEntity.cs" caret="308" fromTop="12" />
+      <File id="90F18008-6F89-4461-A05E-27E5EFDDEBD1/f:Program.cs" caret="409" fromTop="12" />
+      <File id="90F18008-6F89-4461-A05E-27E5EFDDEBD1/d:Service References/d:ServiceStudent/f:Reference.cs" caret="19569" fromTop="6" />
+      <File id="90F18008-6F89-4461-A05E-27E5EFDDEBD1/d:Service References/d:ServiceStudent/f:Reference.cs" caret="19569" fromTop="0" />
+      <File id="90F18008-6F89-4461-A05E-27E5EFDDEBD1/d:Service References/d:ServiceStudent/f:Reference.cs" caret="19648" fromTop="28" />
+      <File id="98C4732D-807E-474D-B8F9-C1163CF0A407/d:Configuration/f:KnownTypeRegistry.cs" caret="4470" fromTop="16" />
+      <File id="90F18008-6F89-4461-A05E-27E5EFDDEBD1/d:Service References/d:ServiceStudent/f:Reference.cs" caret="17582" fromTop="9" />
+      <File id="A8E97429-D847-42D3-A6B9-E337E082A6BC/f:app.config" caret="252" fromTop="4" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files\NUnit 2.6\bin\net-2.0\lib</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <UnitTestSessions>
+    <Session>
+      <Name>Session #1</Name>
+      <Elements>
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.TestCommon.CommonTest" type="MsTestTestClassElement" TypeName="NSun.Data.Test.TestCommon.CommonTest" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.CustomTest" type="MsTestTestClassElement" TypeName="NSun.Data.Test.CustomTest" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.Basic.Insert" type="MsTestTestClassElement" TypeName="NSun.Data.Test.Basic.Insert" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.BasicTest.ORM" type="MsTestTestClassElement" TypeName="NSun.Data.Test.BasicTest.ORM" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.BasicTest.Query" type="MsTestTestClassElement" TypeName="NSun.Data.Test.BasicTest.Query" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.MSSQL.QueryRelation" type="MsTestTestClassElement" TypeName="NSun.Data.Test.MSSQL.QueryRelation" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.Sproc.SprocTest" type="MsTestTestClassElement" TypeName="NSun.Data.Test.Sproc.SprocTest" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.BasicTest.Transation" type="MsTestTestClassElement" TypeName="NSun.Data.Test.BasicTest.Transation" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.CustomTest.Custom1" ParentId="NSun.Data.Test.CustomTest" type="MsTestTestMethodElement" MethodName="Custom1" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.Basic.Insert.Delete" ParentId="NSun.Data.Test.Basic.Insert" type="MsTestTestMethodElement" MethodName="Delete" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.Basic.Insert.Delete2" ParentId="NSun.Data.Test.Basic.Insert" type="MsTestTestMethodElement" MethodName="Delete2" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.Basic.Insert.Delete3" ParentId="NSun.Data.Test.Basic.Insert" type="MsTestTestMethodElement" MethodName="Delete3" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.Basic.Insert.Delete4" ParentId="NSun.Data.Test.Basic.Insert" type="MsTestTestMethodElement" MethodName="Delete4" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.Sproc.SprocTest.InputTestMethod" ParentId="NSun.Data.Test.Sproc.SprocTest" type="MsTestTestMethodElement" MethodName="InputTestMethod" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.Basic.Insert.InsertMSSQL" ParentId="NSun.Data.Test.Basic.Insert" type="MsTestTestMethodElement" MethodName="InsertMSSQL" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.Basic.Insert.InsertMSSQL2" ParentId="NSun.Data.Test.Basic.Insert" type="MsTestTestMethodElement" MethodName="InsertMSSQL2" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.Sproc.SprocTest.IntpuOutPutTestMethod" ParentId="NSun.Data.Test.Sproc.SprocTest" type="MsTestTestMethodElement" MethodName="IntpuOutPutTestMethod" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.TestCommon.CommonTest.Mapper" ParentId="NSun.Data.Test.TestCommon.CommonTest" type="MsTestTestMethodElement" MethodName="Mapper" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.TestCommon.CommonTest.Mapper2" ParentId="NSun.Data.Test.TestCommon.CommonTest" type="MsTestTestMethodElement" MethodName="Mapper2" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.Sproc.SprocTest.MyTestMethod" ParentId="NSun.Data.Test.Sproc.SprocTest" type="MsTestTestMethodElement" MethodName="MyTestMethod" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.TestCommon.CommonTest.MyTestMethod" ParentId="NSun.Data.Test.TestCommon.CommonTest" type="MsTestTestMethodElement" MethodName="MyTestMethod" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.BasicTest.ORM.OneToMany" ParentId="NSun.Data.Test.BasicTest.ORM" type="MsTestTestMethodElement" MethodName="OneToMany" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.Sproc.SprocTest.OutPutTestMethod" ParentId="NSun.Data.Test.Sproc.SprocTest" type="MsTestTestMethodElement" MethodName="OutPutTestMethod" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.BasicTest.Query.Query1" ParentId="NSun.Data.Test.BasicTest.Query" type="MsTestTestMethodElement" MethodName="Query1" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.BasicTest.Query.Query2" ParentId="NSun.Data.Test.BasicTest.Query" type="MsTestTestMethodElement" MethodName="Query2" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.BasicTest.Query.Query3" ParentId="NSun.Data.Test.BasicTest.Query" type="MsTestTestMethodElement" MethodName="Query3" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.BasicTest.Query.Query4" ParentId="NSun.Data.Test.BasicTest.Query" type="MsTestTestMethodElement" MethodName="Query4" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.BasicTest.Query.Query5" ParentId="NSun.Data.Test.BasicTest.Query" type="MsTestTestMethodElement" MethodName="Query5" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.Sproc.SprocTest.ReturnTestMetod" ParentId="NSun.Data.Test.Sproc.SprocTest" type="MsTestTestMethodElement" MethodName="ReturnTestMetod" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.TestCommon.CommonTest.TestDesignByContract" ParentId="NSun.Data.Test.TestCommon.CommonTest" type="MsTestTestMethodElement" MethodName="TestDesignByContract" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.MSSQL.QueryRelation.TestMethod1" ParentId="NSun.Data.Test.MSSQL.QueryRelation" type="MsTestTestMethodElement" MethodName="TestMethod1" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.Sproc.SprocTest.TestMethod1" ParentId="NSun.Data.Test.Sproc.SprocTest" type="MsTestTestMethodElement" MethodName="TestMethod1" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.BasicTest.Transation.Transation1" ParentId="NSun.Data.Test.BasicTest.Transation" type="MsTestTestMethodElement" MethodName="Transation1" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.BasicTest.Transation.Transation2" ParentId="NSun.Data.Test.BasicTest.Transation" type="MsTestTestMethodElement" MethodName="Transation2" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.BasicTest.Transation.Transation3" ParentId="NSun.Data.Test.BasicTest.Transation" type="MsTestTestMethodElement" MethodName="Transation3" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.BasicTest.Transation.Transation4" ParentId="NSun.Data.Test.BasicTest.Transation" type="MsTestTestMethodElement" MethodName="Transation4" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.BasicTest.Transation.Transation5" ParentId="NSun.Data.Test.BasicTest.Transation" type="MsTestTestMethodElement" MethodName="Transation5" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.BasicTest.Transation.Transation6" ParentId="NSun.Data.Test.BasicTest.Transation" type="MsTestTestMethodElement" MethodName="Transation6" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.Basic.Insert.Update" ParentId="NSun.Data.Test.Basic.Insert" type="MsTestTestMethodElement" MethodName="Update" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+        <UnitTestElement Provider="MSTest" Id="NSun.Data.Test.Basic.Insert.Update2" ParentId="NSun.Data.Test.Basic.Insert" type="MsTestTestMethodElement" MethodName="Update2" Project="5BEEE674-64DE-429B-9F47-317110961FB4" />
+      </Elements>
+    </Session>
+  </UnitTestSessions>
+</Configuration>

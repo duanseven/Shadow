@@ -1,0 +1,1 @@
+server=localhost;database=cars;uid=root;pwd=root;

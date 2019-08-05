@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://nsun-shadow.com" elementFormDefault="qualified" targetNamespace="http://nsun-shadow.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/NSun.Data" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+  <xs:complexType name="QueryCriteria">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GuidQuery" type="ser:guid" />
+      <xs:element minOccurs="0" name="IdentyColumnIsNumber" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IdentyColumnName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_queryType" type="tns:QueryType" />
+      <xs:element minOccurs="0" name="_tableName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="QueryCriteria" nillable="true" type="tns:QueryCriteria" />
+  <xs:simpleType name="QueryType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Select" />
+      <xs:enumeration value="Insert" />
+      <xs:enumeration value="Update" />
+      <xs:enumeration value="Delete" />
+      <xs:enumeration value="Sproc" />
+      <xs:enumeration value="Custom" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="QueryType" nillable="true" type="tns:QueryType" />
+  <xs:complexType name="Condition">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ExpressionClip">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_isNot" type="xs:boolean" />
+          <xs:element minOccurs="0" name="_left" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="_linkedConditionAndOrs" nillable="true" type="tns:ArrayOfConditionAndOr" />
+          <xs:element minOccurs="0" name="_linkedConditions" nillable="true" type="tns:ArrayOfCondition" />
+          <xs:element minOccurs="0" name="_operator" type="tns:ExpressionOperator" />
+          <xs:element minOccurs="0" name="_right" nillable="true" type="xs:anyType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Condition" nillable="true" type="tns:Condition" />
+  <xs:complexType name="ExpressionClip">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Expression">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ExpressionClip" nillable="true" type="tns:ExpressionClip" />
+  <xs:complexType name="Expression">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Sql" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_childExpressions" nillable="true" type="q1:ArrayOfanyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Expression" nillable="true" type="tns:Expression" />
+  <xs:complexType name="Assignment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_left" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="_right" nillable="true" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Assignment" nillable="true" type="tns:Assignment" />
+  <xs:complexType name="ParameterEqualsCondition">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Condition">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ParameterEqualsCondition" nillable="true" type="tns:ParameterEqualsCondition" />
+  <xs:complexType name="NullExpression">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="NullExpression" nillable="true" type="tns:NullExpression" />
+  <xs:complexType name="ExpressionCollection">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="ExpressionCollection" nillable="true" type="tns:ExpressionCollection" />
+  <xs:complexType name="ParameterExpression">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ExpressionClip">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Direction" nillable="true" type="tns:SprocParameterDirection" />
+          <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsUnicode" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Size" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Value" nillable="true" type="xs:anyType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ParameterExpression" nillable="true" type="tns:ParameterExpression" />
+  <xs:simpleType name="SprocParameterDirection">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Input" />
+      <xs:enumeration value="InputOutput" />
+      <xs:enumeration value="Output" />
+      <xs:enumeration value="ReturnValue" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SprocParameterDirection" nillable="true" type="tns:SprocParameterDirection" />
+  <xs:complexType name="QueryColumn">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ExpressionClip">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ColumnName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PropertyName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="QueryColumn" nillable="true" type="tns:QueryColumn" />
+  <xs:complexType name="VersionQueryColumn">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryColumn">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="VersionQueryColumn" nillable="true" type="tns:VersionQueryColumn" />
+  <xs:complexType name="IdQueryColumn">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryColumn">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="IdQueryColumn" nillable="true" type="tns:IdQueryColumn" />
+  <xs:complexType name="RelationQueryColumn">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryColumn">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RelationQueryColumn" nillable="true" type="tns:RelationQueryColumn" />
+  <xs:complexType name="BaseEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdentityKey" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseEntity" nillable="true" type="tns:BaseEntity" />
+  <xs:complexType name="BaseEntityRefObject">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/System" base="q2:MarshalByRefObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IdentityKey" type="ser:guid" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BaseEntityRefObject" nillable="true" type="tns:BaseEntityRefObject" />
+  <xs:complexType name="SprocEntity">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryCriteria">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_storedProcedureSection" nillable="true" type="tns:StoredProcedureSection" />
+          <xs:element minOccurs="0" name="isInitParameter" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SprocEntity" nillable="true" type="tns:SprocEntity" />
+  <xs:complexType name="StoredProcedureSection">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryCriteria">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Sql" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="_parameterConditions" nillable="true" type="tns:ArrayOfParameterEqualsCondition" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StoredProcedureSection" nillable="true" type="tns:StoredProcedureSection" />
+  <xs:complexType name="ArrayOfParameterEqualsCondition">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ParameterEqualsCondition" nillable="true" type="tns:ParameterEqualsCondition" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfParameterEqualsCondition" nillable="true" type="tns:ArrayOfParameterEqualsCondition" />
+  <xs:complexType name="SelectSqlSection">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryCriteria">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_condition" nillable="true" type="tns:Condition" />
+          <xs:element minOccurs="0" name="_from" nillable="true" type="tns:FromClip" />
+          <xs:element minOccurs="0" name="_fromCondition" nillable="true" type="tns:Condition" />
+          <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_groups" nillable="true" type="q3:ArrayOfanyType" />
+          <xs:element minOccurs="0" name="_havingcondition" nillable="true" type="tns:Condition" />
+          <xs:element minOccurs="0" name="_isDistinct" type="xs:boolean" />
+          <xs:element minOccurs="0" name="_maxResults" type="xs:int" />
+          <xs:element minOccurs="0" name="_resultColumns" nillable="true" type="tns:ArrayOfExpressionClip" />
+          <xs:element minOccurs="0" name="_skipResults" type="xs:int" />
+          <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="_sortBys" nillable="true" type="q4:ArrayOfKeyValueOfExpressionClipbooleanrIZo_Semb" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SelectSqlSection" nillable="true" type="tns:SelectSqlSection" />
+  <xs:complexType name="FromClip">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsOnlock" type="xs:boolean" />
+      <xs:element minOccurs="0" name="aliasName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="isCostomTable" type="xs:boolean" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/NSun.Data" minOccurs="0" name="joinTypes" nillable="true" type="q5:ArrayOfJoinType" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="joins" nillable="true" type="q6:ArrayOfKeyValueOfstringKeyValuePairOfstringConditionJnTejB4JtwCi8m_S7" />
+      <xs:element minOccurs="0" name="tableOrViewName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FromClip" nillable="true" type="tns:FromClip" />
+  <xs:complexType name="InsertSqlSection">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryCriteria">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsAutoGenerated" type="xs:boolean" />
+          <xs:element minOccurs="0" name="_assignments" nillable="true" type="tns:ArrayOfAssignment" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertSqlSection" nillable="true" type="tns:InsertSqlSection" />
+  <xs:complexType name="ArrayOfAssignment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Assignment" nillable="true" type="tns:Assignment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAssignment" nillable="true" type="tns:ArrayOfAssignment" />
+  <xs:complexType name="UpdateSqlSection">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryCriteria">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_assignments" nillable="true" type="tns:ArrayOfAssignment" />
+          <xs:element minOccurs="0" name="_condition" nillable="true" type="tns:Condition" />
+          <xs:element minOccurs="0" name="_from" nillable="true" type="tns:FromClip" />
+          <xs:element minOccurs="0" name="_fromCondition" nillable="true" type="tns:Condition" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateSqlSection" nillable="true" type="tns:UpdateSqlSection" />
+  <xs:complexType name="DeleteSqlSection">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryCriteria">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_condition" nillable="true" type="tns:Condition" />
+          <xs:element minOccurs="0" name="_from" nillable="true" type="tns:FromClip" />
+          <xs:element minOccurs="0" name="_fromCondition" nillable="true" type="tns:Condition" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteSqlSection" nillable="true" type="tns:DeleteSqlSection" />
+  <xs:complexType name="CustomSqlSection">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryCriteria">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="_parameterConditions" nillable="true" type="tns:ArrayOfParameterEqualsCondition" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CustomSqlSection" nillable="true" type="tns:CustomSqlSection" />
+  <xs:complexType name="SubQuery">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ExpressionClip">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SubQuery" nillable="true" type="tns:SubQuery" />
+  <xs:complexType name="OrderByClip">
+    <xs:sequence>
+      <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="orderBys" type="q7:KeyValuePairOfExpressionClipbooleanrIZo_Semb" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderByClip" nillable="true" type="tns:OrderByClip" />
+  <xs:complexType name="ArrayOfExpressionClip">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExpressionClip" nillable="true" type="tns:ExpressionClip" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExpressionClip" nillable="true" type="tns:ArrayOfExpressionClip" />
+  <xs:complexType name="ArrayOfConditionAndOr">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConditionAndOr" type="tns:ConditionAndOr" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConditionAndOr" nillable="true" type="tns:ArrayOfConditionAndOr" />
+  <xs:simpleType name="ConditionAndOr">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="And" />
+      <xs:enumeration value="Or" />
+      <xs:enumeration value="Space" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ConditionAndOr" nillable="true" type="tns:ConditionAndOr" />
+  <xs:complexType name="ArrayOfCondition">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Condition" nillable="true" type="tns:Condition" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCondition" nillable="true" type="tns:ArrayOfCondition" />
+  <xs:simpleType name="ExpressionOperator">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Equals" />
+      <xs:enumeration value="NotEquals" />
+      <xs:enumeration value="In" />
+      <xs:enumeration value="GreaterThan" />
+      <xs:enumeration value="GreaterThanOrEquals" />
+      <xs:enumeration value="LessThan" />
+      <xs:enumeration value="LessThanOrEquals" />
+      <xs:enumeration value="Like" />
+      <xs:enumeration value="Escape" />
+      <xs:enumeration value="Is" />
+      <xs:enumeration value="IsNot" />
+      <xs:enumeration value="Add" />
+      <xs:enumeration value="Subtract" />
+      <xs:enumeration value="Multiply" />
+      <xs:enumeration value="Divide" />
+      <xs:enumeration value="Mod" />
+      <xs:enumeration value="BitwiseAnd" />
+      <xs:enumeration value="BitwiseOr" />
+      <xs:enumeration value="BitwiseXor" />
+      <xs:enumeration value="BitwiseNot" />
+      <xs:enumeration value="Exists" />
+      <xs:enumeration value="Link" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ExpressionOperator" nillable="true" type="tns:ExpressionOperator" />
+</xs:schema>

@@ -1,0 +1,8 @@
+E:\shadow\sourceCode\Castle_Test\bin\Debug\Castle_Test.exe
+E:\shadow\sourceCode\Castle_Test\bin\Debug\Castle_Test.pdb
+E:\shadow\sourceCode\Castle_Test\bin\Debug\Castle.Core.dll
+E:\shadow\sourceCode\Castle_Test\obj\Debug\Castle_Test.exe
+E:\shadow\sourceCode\Castle_Test\obj\Debug\Castle_Test.pdb
+E:\shadow\sourceCode\Castle_Test\obj\Debug\Castle_Test.csprojAssemblyReference.cache
+E:\shadow\sourceCode\Castle_Test\obj\Debug\Castle_Test.csproj.CoreCompileInputs.cache
+E:\shadow\sourceCode\Castle_Test\obj\Debug\Castle_Test.csproj.CopyComplete

@@ -1,0 +1,17 @@
+E:\shadow\sourceCode\RemotingSerivce\bin\Debug\RemotingSerivce.exe.config
+E:\shadow\sourceCode\RemotingSerivce\bin\Debug\RemotingSerivce.exe
+E:\shadow\sourceCode\RemotingSerivce\bin\Debug\RemotingSerivce.pdb
+E:\shadow\sourceCode\RemotingSerivce\bin\Debug\Castle.Core.dll
+E:\shadow\sourceCode\RemotingSerivce\bin\Debug\IServiceSchool.dll
+E:\shadow\sourceCode\RemotingSerivce\bin\Debug\NSun.Data.dll
+E:\shadow\sourceCode\RemotingSerivce\bin\Debug\RemotingModel.dll
+E:\shadow\sourceCode\RemotingSerivce\bin\Debug\ServiceShool.dll
+E:\shadow\sourceCode\RemotingSerivce\bin\Debug\IServiceSchool.pdb
+E:\shadow\sourceCode\RemotingSerivce\bin\Debug\NSun.Data.pdb
+E:\shadow\sourceCode\RemotingSerivce\bin\Debug\RemotingModel.pdb
+E:\shadow\sourceCode\RemotingSerivce\bin\Debug\ServiceShool.pdb
+E:\shadow\sourceCode\RemotingSerivce\obj\x86\Debug\RemotingSerivce.exe
+E:\shadow\sourceCode\RemotingSerivce\obj\x86\Debug\RemotingSerivce.pdb
+E:\shadow\sourceCode\RemotingSerivce\obj\x86\Debug\RemotingSerivce.csprojAssemblyReference.cache
+E:\shadow\sourceCode\RemotingSerivce\obj\x86\Debug\RemotingSerivce.csproj.CoreCompileInputs.cache
+E:\shadow\sourceCode\RemotingSerivce\obj\x86\Debug\RemotingSerivce.csproj.CopyComplete

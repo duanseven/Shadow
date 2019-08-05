@@ -1,0 +1,104 @@
+﻿<Window x:Class="SQL_Management.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:avalonDock="http://avalondock.codeplex.com" 
+        Title="SQL_Management" Height="550" Width="800" ShowInTaskbar="True" 
+        WindowStartupLocation="CenterScreen" WindowState="Maximized" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" Height="30" HorizontalAlignment="Stretch" Name="menu1" VerticalAlignment="Top"
+              Padding="5,3,10,0" IsMainMenu="True" IsEnabled="True" FontStretch="Normal" FontSize="12" FontFamily="Microsoft YaHei" FontStyle="Normal" ForceCursor="False">
+            <MenuItem Header="文件" IsChecked="False" IsCheckable="False" Padding="7,2,8,3">
+                <MenuItem Header="连接对象资源管理器" />
+                <MenuItem Header="断开与连接对象资源管理器的连接" />
+                <MenuItem Header="关闭" />
+                <MenuItem Header="退出" />
+            </MenuItem>
+            <MenuItem Header="编辑" />
+            <MenuItem Header="视图" />
+            <MenuItem Header="设置" />
+            <MenuItem Header="窗口" />
+            <MenuItem Header="帮助" />
+        </Menu>
+
+        <avalonDock:DockingManager Grid.Row="1" x:Name="dockManager" AllowMixedOrientation="True">
+            <!--使用皮肤-->
+            <avalonDock:DockingManager.Theme>               
+                <avalonDock:AeroTheme/>                
+            </avalonDock:DockingManager.Theme>
+           
+            <!--标头模板-->
+            <avalonDock:DockingManager.DocumentHeaderTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <!--列表前面的图标<Image Source="{Binding IconSource}" Margin="0,0,4,0"/>-->
+                        <TextBlock Text="{Binding Title}" TextTrimming="CharacterEllipsis"/>
+                    </StackPanel>
+                </DataTemplate>
+            </avalonDock:DockingManager.DocumentHeaderTemplate>
+
+            <!--主体部分-->
+            <avalonDock:LayoutRoot>
+                <!--左面隐藏元素-->
+                <avalonDock:LayoutRoot.RightSide>
+                    <avalonDock:LayoutAnchorSide>
+                        <avalonDock:LayoutAnchorGroup> 
+
+                        </avalonDock:LayoutAnchorGroup>
+                    </avalonDock:LayoutAnchorSide>
+                </avalonDock:LayoutRoot.RightSide>
+
+
+                <avalonDock:LayoutPanel Orientation="Horizontal">
+                    <!--左面打开窗口-->
+                    <avalonDock:LayoutAnchorablePane DockWidth="200">
+                        <avalonDock:LayoutAnchorable x:Name="WinFormsWindow" 
+                                                     ContentId="WinFormsWindow"
+                                                     Title="对象资源管理器" 
+                                                     ToolTip="My WinForms Tool"
+                                                     CanHide="False"
+                                                     CanClose="False">
+                            <Grid>
+                                <TreeView ItemsSource="{Binding TreeData}"
+                                          Name="datas" HorizontalAlignment="Stretch" 
+                                          VerticalAlignment="Stretch">
+                                </TreeView>
+                            </Grid> 
+                        </avalonDock:LayoutAnchorable>
+                    </avalonDock:LayoutAnchorablePane>
+
+                    <!--中间的元素-->
+                    <avalonDock:LayoutDocumentPaneGroup>
+                        <avalonDock:LayoutDocumentPane>
+                            <avalonDock:LayoutDocument ContentId="document1" Title="摘要" CanFloat="False">
+                                <StackPanel>
+                                    
+                                </StackPanel>
+                            </avalonDock:LayoutDocument>                         
+                        </avalonDock:LayoutDocumentPane>
+                    </avalonDock:LayoutDocumentPaneGroup>
+
+                    <!--右面打开窗口-->
+                    <!--<avalonDock:LayoutAnchorablePaneGroup DockWidth="0">
+                        <avalonDock:LayoutAnchorablePane> 
+                        </avalonDock:LayoutAnchorablePane>
+                    </avalonDock:LayoutAnchorablePaneGroup>-->
+
+                </avalonDock:LayoutPanel>
+
+                <!--左边隐藏的元素-->
+                <avalonDock:LayoutRoot.LeftSide>
+                    <avalonDock:LayoutAnchorSide>
+                        <avalonDock:LayoutAnchorGroup>
+                             
+                        </avalonDock:LayoutAnchorGroup>
+                    </avalonDock:LayoutAnchorSide>
+                </avalonDock:LayoutRoot.LeftSide>
+            </avalonDock:LayoutRoot>
+        </avalonDock:DockingManager>
+      
+    </Grid>
+</Window>

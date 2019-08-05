@@ -1,0 +1,15 @@
+E:\shadow\sourceCode\RemotingClient\bin\Debug\RemotingClient.exe.config
+E:\shadow\sourceCode\RemotingClient\bin\Debug\RemotingClient.exe
+E:\shadow\sourceCode\RemotingClient\bin\Debug\RemotingClient.pdb
+E:\shadow\sourceCode\RemotingClient\bin\Debug\IServiceSchool.dll
+E:\shadow\sourceCode\RemotingClient\bin\Debug\NSun.Data.dll
+E:\shadow\sourceCode\RemotingClient\bin\Debug\RemotingModel.dll
+E:\shadow\sourceCode\RemotingClient\bin\Debug\Castle.Core.dll
+E:\shadow\sourceCode\RemotingClient\bin\Debug\IServiceSchool.pdb
+E:\shadow\sourceCode\RemotingClient\bin\Debug\NSun.Data.pdb
+E:\shadow\sourceCode\RemotingClient\bin\Debug\RemotingModel.pdb
+E:\shadow\sourceCode\RemotingClient\obj\x86\Debug\RemotingClient.exe
+E:\shadow\sourceCode\RemotingClient\obj\x86\Debug\RemotingClient.pdb
+E:\shadow\sourceCode\RemotingClient\obj\x86\Debug\RemotingClient.csprojAssemblyReference.cache
+E:\shadow\sourceCode\RemotingClient\obj\x86\Debug\RemotingClient.csproj.CoreCompileInputs.cache
+E:\shadow\sourceCode\RemotingClient\obj\x86\Debug\RemotingClient.csproj.CopyComplete

@@ -1,0 +1,12 @@
+E:\shadow\sourceCode\IWCFService\bin\Debug\IStudentService.cs.dll
+E:\shadow\sourceCode\IWCFService\bin\Debug\IStudentService.cs.pdb
+E:\shadow\sourceCode\IWCFService\bin\Debug\NSun.Data.dll
+E:\shadow\sourceCode\IWCFService\bin\Debug\RemotingModel.dll
+E:\shadow\sourceCode\IWCFService\bin\Debug\Castle.Core.dll
+E:\shadow\sourceCode\IWCFService\bin\Debug\NSun.Data.pdb
+E:\shadow\sourceCode\IWCFService\bin\Debug\RemotingModel.pdb
+E:\shadow\sourceCode\IWCFService\obj\Debug\IStudentService.cs.dll
+E:\shadow\sourceCode\IWCFService\obj\Debug\IStudentService.cs.pdb
+E:\shadow\sourceCode\IWCFService\obj\Debug\IStudentService.csprojAssemblyReference.cache
+E:\shadow\sourceCode\IWCFService\obj\Debug\IStudentService.csproj.CoreCompileInputs.cache
+E:\shadow\sourceCode\IWCFService\obj\Debug\IStudentService.csproj.CopyComplete

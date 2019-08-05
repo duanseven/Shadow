@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e6ded5c5-d184-40b2-9c65-ad4983e2d9cf" name="Administrator@DACEY-PC 2012-09-02 22:11:37" runUser="Dacey-PC\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="1d6146ab-c32d-40b7-ac0e-b5a10c3fc412">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_DACEY-PC 2012-09-02 22_11_37">
+      <DeploymentItem filename="E:\ShadowV2\NSun_Shadow_V2\NSun.Data\bin\Debug\NSun.Data.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-09-02T22:11:37.3899301+08:00" queuing="2012-09-02T22:11:41.2601515+08:00" start="2012-09-02T22:11:41.4171604+08:00" finish="2012-09-02T22:11:42.9512482+08:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="4" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="3" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="DACEY-PC" outcome="Error" timestamp="2012-09-02T22:11:42.9382475+08:00">
+        <Text>测试宿主进程意外退出。</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Mapper" storage="e:\shadowv2\nsun_shadow_v2\nsun.data.test\bin\debug\nsun.data.test.dll" id="e26cc927-74d9-5d78-eef8-0d7d2900627e">
+      <Execution id="b86d3552-2038-40db-ba2d-d087ebf7a2f9" />
+      <TestMethod codeBase="E:/ShadowV2/NSun_Shadow_V2/NSun.Data.Test/bin/Debug/NSun.Data.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NSun.Data.Test.TestCommon.CommonTest, NSun.Data.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Mapper" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="e:\shadowv2\nsun_shadow_v2\nsun.data.test\bin\debug\nsun.data.test.dll" id="499fa923-f573-6bad-2ea9-754c0b9d0057">
+      <Execution id="ff82d86d-6438-4ae6-87ca-2e0bae452f89" />
+      <TestMethod codeBase="E:/ShadowV2/NSun_Shadow_V2/NSun.Data.Test/bin/Debug/NSun.Data.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NSun.Data.Test.MSSQL.QueryRelation, NSun.Data.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="Mapper2" storage="e:\shadowv2\nsun_shadow_v2\nsun.data.test\bin\debug\nsun.data.test.dll" id="3a5c102f-6738-2fce-10a9-d8e0662de1ff">
+      <Execution id="4b671e54-2010-4b87-99fa-7e5f086ece84" />
+      <TestMethod codeBase="E:/ShadowV2/NSun_Shadow_V2/NSun.Data.Test/bin/Debug/NSun.Data.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NSun.Data.Test.TestCommon.CommonTest, NSun.Data.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Mapper2" />
+    </UnitTest>
+    <UnitTest name="TestDesignByContract" storage="e:\shadowv2\nsun_shadow_v2\nsun.data.test\bin\debug\nsun.data.test.dll" id="a5ddf2a7-ef83-1362-e852-74bbbcabdc38">
+      <Execution id="03a42c6d-6add-4efb-845a-6c888927b729" />
+      <TestMethod codeBase="E:/ShadowV2/NSun_Shadow_V2/NSun.Data.Test/bin/Debug/NSun.Data.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NSun.Data.Test.TestCommon.CommonTest, NSun.Data.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestDesignByContract" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a5ddf2a7-ef83-1362-e852-74bbbcabdc38" executionId="03a42c6d-6add-4efb-845a-6c888927b729" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e26cc927-74d9-5d78-eef8-0d7d2900627e" executionId="b86d3552-2038-40db-ba2d-d087ebf7a2f9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3a5c102f-6738-2fce-10a9-d8e0662de1ff" executionId="4b671e54-2010-4b87-99fa-7e5f086ece84" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="499fa923-f573-6bad-2ea9-754c0b9d0057" executionId="ff82d86d-6438-4ae6-87ca-2e0bae452f89" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="03a42c6d-6add-4efb-845a-6c888927b729" testId="a5ddf2a7-ef83-1362-e852-74bbbcabdc38" testName="TestDesignByContract" computerName="DACEY-PC" duration="00:00:01.3730785" startTime="2012-09-02T22:11:41.5771696+08:00" endTime="2012-09-02T22:11:42.9502481+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="03a42c6d-6add-4efb-845a-6c888927b729">
+    </UnitTestResult>
+    <UnitTestResult executionId="b86d3552-2038-40db-ba2d-d087ebf7a2f9" testId="e26cc927-74d9-5d78-eef8-0d7d2900627e" testName="Mapper" computerName="DACEY-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b86d3552-2038-40db-ba2d-d087ebf7a2f9">
+    </UnitTestResult>
+    <UnitTestResult executionId="4b671e54-2010-4b87-99fa-7e5f086ece84" testId="3a5c102f-6738-2fce-10a9-d8e0662de1ff" testName="Mapper2" computerName="DACEY-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4b671e54-2010-4b87-99fa-7e5f086ece84">
+    </UnitTestResult>
+    <UnitTestResult executionId="ff82d86d-6438-4ae6-87ca-2e0bae452f89" testId="499fa923-f573-6bad-2ea9-754c0b9d0057" testName="TestMethod1" computerName="DACEY-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff82d86d-6438-4ae6-87ca-2e0bae452f89">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,11 @@
+E:\shadow\sourceCode\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+E:\shadow\sourceCode\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+E:\shadow\sourceCode\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+E:\shadow\sourceCode\ConsoleApplication1\bin\Debug\Castle.Core.dll
+E:\shadow\sourceCode\ConsoleApplication1\bin\Debug\NSun.Data.dll
+E:\shadow\sourceCode\ConsoleApplication1\bin\Debug\NSun.Data.pdb
+E:\shadow\sourceCode\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+E:\shadow\sourceCode\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+E:\shadow\sourceCode\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csprojAssemblyReference.cache
+E:\shadow\sourceCode\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+E:\shadow\sourceCode\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csproj.CopyComplete

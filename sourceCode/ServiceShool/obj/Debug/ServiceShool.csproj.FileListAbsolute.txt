@@ -1,0 +1,14 @@
+E:\shadow\sourceCode\ServiceShool\bin\Debug\ServiceShool.dll
+E:\shadow\sourceCode\ServiceShool\bin\Debug\ServiceShool.pdb
+E:\shadow\sourceCode\ServiceShool\bin\Debug\Castle.Core.dll
+E:\shadow\sourceCode\ServiceShool\bin\Debug\IServiceSchool.dll
+E:\shadow\sourceCode\ServiceShool\bin\Debug\NSun.Data.dll
+E:\shadow\sourceCode\ServiceShool\bin\Debug\RemotingModel.dll
+E:\shadow\sourceCode\ServiceShool\bin\Debug\IServiceSchool.pdb
+E:\shadow\sourceCode\ServiceShool\bin\Debug\NSun.Data.pdb
+E:\shadow\sourceCode\ServiceShool\bin\Debug\RemotingModel.pdb
+E:\shadow\sourceCode\ServiceShool\obj\Debug\ServiceShool.dll
+E:\shadow\sourceCode\ServiceShool\obj\Debug\ServiceShool.pdb
+E:\shadow\sourceCode\ServiceShool\obj\Debug\ServiceShool.csprojAssemblyReference.cache
+E:\shadow\sourceCode\ServiceShool\obj\Debug\ServiceShool.csproj.CoreCompileInputs.cache
+E:\shadow\sourceCode\ServiceShool\obj\Debug\ServiceShool.csproj.CopyComplete

@@ -1,0 +1,11 @@
+﻿Provider=Microsoft.ACE.OLEDB.12.0; Persist Security Info=False; Data Source=" + s.Substring(1);
+
+
+ <add name="db" connectionString="server=.;database=demo;uid=sa;pwd=tiger" providerName="System.Data.SqlClient"/>
+    <add name="db2" connectionString="data source=192.168.0.12;uid=system;pwd=tiger" providerName="System.Data.OracleClient"/>
+    <add name="db3" connectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=E:\util\data\demo.mdb;"/>
+    <add name="db4" connectionString="Provider=Microsoft.ACE.OLEDB.12.0; Persist Security Info=False; Data Source=E:\util\data\demo.accdb;"/>
+    <add name="db5" connectionString="Server=192.168.0.12;Database=test;Uid=root;Pwd=tiger;"/>
+    <add name="db6" connectionString="Server=192.168.0.12:50000;Database=demo;UID=db2admin;PWD=tiger;"/>
+    <add name="db7" connectionString="Data Source=E:\\util\\data\\demo.db3;"/>
+    <add name="db8" connectionString="Server=192.168.0.12;Port=5432;Database=demo;User Id=postgres;Password=tiger;"/>

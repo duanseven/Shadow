@@ -1,0 +1,13 @@
+E:\shadow\sourceCode\ELTest\bin\Debug\ELTest.exe
+E:\shadow\sourceCode\ELTest\bin\Debug\ELTest.pdb
+E:\shadow\sourceCode\ELTest\bin\Debug\Castle.Core.dll
+E:\shadow\sourceCode\ELTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll
+E:\shadow\sourceCode\ELTest\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\shadow\sourceCode\ELTest\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\shadow\sourceCode\ELTest\bin\Debug\Microsoft.Practices.Unity.dll
+E:\shadow\sourceCode\ELTest\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\shadow\sourceCode\ELTest\obj\x86\Debug\ELTest.exe
+E:\shadow\sourceCode\ELTest\obj\x86\Debug\ELTest.pdb
+E:\shadow\sourceCode\ELTest\obj\x86\Debug\ELTest.csprojAssemblyReference.cache
+E:\shadow\sourceCode\ELTest\obj\x86\Debug\ELTest.csproj.CoreCompileInputs.cache
+E:\shadow\sourceCode\ELTest\obj\x86\Debug\ELTest.csproj.CopyComplete

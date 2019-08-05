@@ -1,0 +1,29 @@
+﻿<Window x:Class="SQL_Management.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="连接到服务器" Height="256" Width="515" WindowStartupLocation="CenterScreen" ShowInTaskbar="True" 
+        ResizeMode="NoResize"
+        >
+    <DockPanel>
+        <Label Content="SQL Management NSun For Shadow" DockPanel.Dock="Top" Background="#FF489D9D" />
+        <Grid DockPanel.Dock="Bottom">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120*" />
+                <RowDefinition Height="40*" />
+            </Grid.RowDefinitions>
+            <Label Height="0.5" HorizontalAlignment="Left" Margin="18,140,0,0" Name="label1" VerticalAlignment="Top" Width="453" Background="#FFB3A9A9" />
+            <Button Command="{Binding ConnectionCommand}" Content="连接_C" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="215,10,0,0" Name="button1" VerticalAlignment="Top" Width="75" />
+            <Button Command="{Binding CancelCommand}" Content="取消_Q" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="305,10,0,0" Name="Clean" VerticalAlignment="Top" Width="75" />
+            <Button Content="帮助_H" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="396,10,0,0" Name="button3" VerticalAlignment="Top" Width="75" />
+            <Label Content="服务器类型:" Height="28" HorizontalAlignment="Left" Margin="34,27,0,0" Name="label2" VerticalAlignment="Top" />
+            <Label Content="连接字符串:" Height="28" HorizontalAlignment="Left" Margin="34,66,0,0" Name="label3" VerticalAlignment="Top" />
+            <ComboBox Height="23" 
+                       ItemsSource="{Binding ListSQLType}"
+                       DisplayMemberPath="" SelectedValuePath="" SelectedIndex="0"
+                      SelectedValue="{Binding ConnectionInfo.SqlType,Mode=OneWay}"
+                      HorizontalAlignment="Left" Margin="151,27,0,0" Name="comboBox1" VerticalAlignment="Top" Width="311" />
+            <TextBox Height="23" Text="{Binding ConnInfoView.ConnectionString,Mode=TwoWay}" HorizontalAlignment="Left" Margin="151,68,0,0" Name="textBox1" VerticalAlignment="Top" Width="311" />
+            <CheckBox Content="记住设置(_M)" IsChecked="{Binding IsCheckSave, Mode=TwoWay}" Height="16" HorizontalAlignment="Left" Margin="151,106,0,0" Name="checkBox1" VerticalAlignment="Top" />
+        </Grid>
+    </DockPanel>
+</Window>

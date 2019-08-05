@@ -1,0 +1,14 @@
+E:\shadow\sourceCode\StudentService\bin\Debug\StudentService.dll
+E:\shadow\sourceCode\StudentService\bin\Debug\StudentService.pdb
+E:\shadow\sourceCode\StudentService\bin\Debug\IStudentService.cs.dll
+E:\shadow\sourceCode\StudentService\bin\Debug\NSun.Data.dll
+E:\shadow\sourceCode\StudentService\bin\Debug\RemotingModel.dll
+E:\shadow\sourceCode\StudentService\bin\Debug\Castle.Core.dll
+E:\shadow\sourceCode\StudentService\bin\Debug\IStudentService.cs.pdb
+E:\shadow\sourceCode\StudentService\bin\Debug\NSun.Data.pdb
+E:\shadow\sourceCode\StudentService\bin\Debug\RemotingModel.pdb
+E:\shadow\sourceCode\StudentService\obj\Debug\StudentService.dll
+E:\shadow\sourceCode\StudentService\obj\Debug\StudentService.pdb
+E:\shadow\sourceCode\StudentService\obj\Debug\StudentService.csprojAssemblyReference.cache
+E:\shadow\sourceCode\StudentService\obj\Debug\StudentService.csproj.CoreCompileInputs.cache
+E:\shadow\sourceCode\StudentService\obj\Debug\StudentService.csproj.CopyComplete

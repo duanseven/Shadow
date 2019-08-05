@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{98C4732D-807E-474D-B8F9-C1163CF0A407}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NSun.Data</RootNamespace>
+    <AssemblyName>NSun.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;net35,DBC_CHECK_ALL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\lib\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Command\CustomQueryTable.cs" />
+    <Compile Include="Command\Section\CustomSqlSection.cs" />
+    <Compile Include="Command\Section\DeleteSqlSection.cs" />
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Command\Section\InsertSqlSection.cs" />
+    <Compile Include="Command\IQueryTable.cs" />
+    <Compile Include="Command\QueryCriteria.cs" />
+    <Compile Include="Command\QueryType.cs" />
+    <Compile Include="Command\Section\SelectSqlSection.cs" />
+    <Compile Include="Command\SprocDbCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Command\Section\StoredProcedureSection.cs" />
+    <Compile Include="Command\Section\UpdateSqlSection.cs" />
+    <Compile Include="Condition\Assignment.cs" />
+    <Compile Include="Condition\Columns.cs" />
+    <Compile Include="Condition\Condition.cs" />
+    <Compile Include="Condition\DefaultValue.cs" />
+    <Compile Include="Condition\ExpressionClip.cs" />
+    <Compile Include="Condition\ExpressionHelper.cs" />
+    <Compile Include="Condition\ExpressionOperator.cs" />
+    <Compile Include="Condition\Expressions.cs" />
+    <Compile Include="Condition\FromClip.cs" />
+    <Compile Include="Condition\IColumn.cs" />
+    <Compile Include="Condition\IExpression.cs" />
+    <Compile Include="Condition\OrderByClip.cs" />
+    <Compile Include="Condition\ParameterEqualsCondition.cs" />
+    <Compile Include="Condition\ParameterExpressions.cs" />
+    <Compile Include="Condition\SprocParameterDirection.cs" />
+    <Compile Include="Condition\SubQuery.cs" />
+    <Compile Include="Configuration\KnownTypeRegistry.cs" />
+    <Compile Include="Data\BatchCommander.cs" />
+    <Compile Include="Data\DB2\DB2QueryCommandBuilder.cs" />
+    <Compile Include="Data\DB2\DB2ExtensionMethods.cs.cs" />
+    <Compile Include="Data\DBQuery.cs" />
+    <Compile Include="Data\DbQueryAndArgument.cs" />
+    <Compile Include="Data\DBQueryFactory.cs" />
+    <Compile Include="Data\MsAccess\MsAccessExtensionMethods.cs.cs" />
+    <Compile Include="Data\MsAccess\MsAccessQueryCommandBuilder.cs" />
+    <Compile Include="Data\MySql\MySqlQueryCommandBuilder.cs" />
+    <Compile Include="Data\MySql\MySqlExtensionMethods.cs" />
+    <Compile Include="Data\Npgsql\NpgsqlQueryCommandBuilder.cs" />
+    <Compile Include="Data\Npgsql\NpgsqlExtensionMethods.cs" />
+    <Compile Include="Data\OracleClient\Oracle9iQueryCommandBuilder.cs" />
+    <Compile Include="Data\OracleClient\OracleExtensionMethods.cs" />
+    <Compile Include="Data\OracleClient\OracleQueryCommandBuilder.cs" />
+    <Compile Include="Condition\RelationQueryColumn.cs" />
+    <Compile Include="Data\SqlClient\Sql2000QueryCommandBuilder.cs" />
+    <Compile Include="Data\SqlClient\Sql2005QueryCommandBuilder.cs" />
+    <Compile Include="Data\SqlClient\Sql2008QueryCommandBuilder.cs" />
+    <Compile Include="Data\SqlClient\SqlExtensionMethods.cs" />
+    <Compile Include="Data\Sqlite\SqliteExtensionMethods.cs" />
+    <Compile Include="Data\Sqlite\SqliteQueryCommandBuilder.cs" />
+    <Compile Include="Data\Transaction\Transaction.cs" />
+    <Compile Include="Data\Transaction\TransactionScope.cs" />
+    <Compile Include="Lambda\ColumnExpand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lambda\ExpandMethod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lambda\Expand\CustomExpand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lambda\Expand\DeleteExpand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lambda\Expand\SelectExpand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lambda\Expand\StoredExpand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lambda\Expand\UpdateExpand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lambda\ExpressionUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lambda\LambdaUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lambda\SqlSection\DeleteSqlSection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lambda\SqlSection\SelectSqlSectionMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lambda\SqlSection\UpdateSqlSection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Log\DataBaseLog.cs" />
+    <Compile Include="Log\FileLog.cs" />
+    <Compile Include="Log\IDBLog.cs" />
+    <Compile Include="Mapping\ActiveRecordFieldList.cs" />
+    <Compile Include="Mapping\Data\BaseDBQuery.cs" />
+    <Compile Include="Mapping\BaseEntity.cs" />
+    <Compile Include="Mapping\ConvertListUtil.cs" />
+    <Compile Include="Mapping\Data\DBQueryMapping.cs" />
+    <Compile Include="Mapping\DynamicBuilderRead.cs" />
+    <Compile Include="Mapping\IBaseEntity.cs" />
+    <Compile Include="Mapping\SprocEntitys.cs" />
+    <Compile Include="System\Helper\CastleProxy\BaseEntityInterceptor.cs" />
+    <Compile Include="System\Helper\ELProxy\BaseEntityRefObjectProxy.cs" />
+    <Compile Include="System\Helper\ELProxy\ModelRefObjectHelper.cs" />
+    <Compile Include="System\Helper\IModelHelper.cs" />
+    <Compile Include="System\IdentityGenerator.cs" />
+    <Compile Include="Mapping\Mapping\MapperBuilder.cs" />
+    <Compile Include="Mapping\Mapping\MapperCacheKey.cs" />
+    <Compile Include="Mapping\Mapping\MapperFactory.cs" />
+    <Compile Include="Mapping\Mapping\MappingDelegates.cs" />
+    <Compile Include="Mapping\Mapping\MappingHelper.cs" />
+    <Compile Include="Mapping\Mapping\PrimitiveTypeMapperBuilder.cs" />
+    <Compile Include="System\ReflectionUtils.cs" />
+    <Compile Include="Data\QueryCommandFactory.cs" />
+    <Compile Include="Mapping\Reflection\ILCodeGenerator.cs" />
+    <Compile Include="Mapping\Reflection\ILCodeGeneratorDelegates.cs" />
+    <Compile Include="Mapping\SprocEntity.cs" />
+    <Compile Include="Mapping\TableSchema.cs" />
+    <Compile Include="System\AdditionalTypes.cs" />
+    <Compile Include="Mapping\AttributeClass.cs" />
+    <Compile Include="System\AttributeUtils.cs" />
+    <Compile Include="System\Cache\DependingKey.cs" />
+    <Compile Include="System\Cache\LruDictionary.cs" />
+    <Compile Include="System\Cache\LruItemCache.cs" />
+    <Compile Include="System\Cache\Registry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="System\Cache\RegistryMapping.cs" />
+    <Compile Include="System\Cache\RWLock.cs" />
+    <Compile Include="Mapping\Collection\List.cs" />
+    <Compile Include="System\CommonUtils.cs" />
+    <Compile Include="Data\Database.cs" />
+    <Compile Include="System\Helper\DataTypeParser.cs" />
+    <Compile Include="System\Helper\DataUtils.cs" />
+    <Compile Include="System\DesignByContract.cs" />
+    <Compile Include="Mapping\EnumTypes.cs" />
+    <Compile Include="Log\ILogable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Data\QueryCommandBuilder.cs" />
+    <Compile Include="System\Helper\CastleProxy\ModelHelper.cs" />
+    <Compile Include="System\Helper\NullableHelper.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
